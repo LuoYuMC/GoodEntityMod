@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/LuoYuMC/good_entity_mod/issues"
 
 [[mods]]
 modId="goodentity"
-version="1.0.0"
+version="0.0.1-alpha"
 displayName="Good Entity"
 displayURL="https://github.com/LuoYuMC/good_entity_mod"
 authors="LuoYu"

@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Specification-Title: goodentity
 Specification-Vendor: LuoYu
 Specification-Version: 1
-Implementation-Title: LuoYu_sChangedMod
-Implementation-Version: 1.0.0
+Implementation-Title: goodentity
+Implementation-Version: 0.0.1-alpha
 Implementation-Vendor: LuoYu
 Implementation-Timestamp: 2026-08-20T13:10:53+0800
 MixinConfigs: goodentity.mixins.json
