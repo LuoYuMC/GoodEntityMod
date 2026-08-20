@@ -67,20 +67,19 @@ public class LuoYuWolfEntity extends ChangedEntity {
     // ===================== Attributes =====================
 
     public static AttributeSupplier.Builder createAttributes() {
-        AttributeSupplier.Builder builder = ChangedEntity.createLatexAttributes();
-        builder.add(ChangedAttributes.SPRINT_SPEED.get(), 1.5D);
-        builder.add(ChangedAttributes.SNEAK_SPEED.get(), 1.5D);
-        builder.add(ChangedAttributes.AIR_CAPACITY.get(), 15.0);
-        builder.add(ChangedAttributes.JUMP_STRENGTH.get(), 1.8D);
-        builder.add(ChangedAttributes.FALL_RESISTANCE.get(), 5.0D);
-        builder.add(ChangedAttributes.TRANSFUR_DAMAGE.get(), 7);
-        builder.add(Attributes.MOVEMENT_SPEED, 1.5);
-        builder.add(Attributes.MAX_HEALTH, 60);
-        builder.add(Attributes.ARMOR, 20);
-        builder.add(Attributes.ATTACK_DAMAGE, 10);
-        builder.add(Attributes.FOLLOW_RANGE, 48);
-        builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.6);
-        return builder;
+        return ChangedEntity.createLatexAttributes()
+            .add(ChangedAttributes.SPRINT_SPEED.get(), 1.5D)
+            .add(ChangedAttributes.SNEAK_SPEED.get(), 1.5D)
+            .add(ChangedAttributes.AIR_CAPACITY.get(), 15.0)
+            .add(ChangedAttributes.JUMP_STRENGTH.get(), 1.8D)
+            .add(ChangedAttributes.FALL_RESISTANCE.get(), 5.0D)
+            .add(ChangedAttributes.TRANSFUR_DAMAGE.get(), 7)
+            .add(Attributes.MOVEMENT_SPEED, 1.5)
+            .add(Attributes.MAX_HEALTH, 60)
+            .add(Attributes.ARMOR, 20)
+            .add(Attributes.ATTACK_DAMAGE, 10)
+            .add(Attributes.FOLLOW_RANGE, 48)
+            .add(Attributes.KNOCKBACK_RESISTANCE, 0.6);
     }
 
     @Override
@@ -88,19 +87,19 @@ public class LuoYuWolfEntity extends ChangedEntity {
         super.setAttributes(attributes);
 
         attributes.getInstance(ChangedAttributes.TRANSFUR_DAMAGE.get()).setBaseValue(7);
-        attributes.getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(1.5D);
-        attributes.getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(1.5D);
-        attributes.getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(30.0);
-        attributes.getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(1.8);
-        attributes.getInstance(ChangedAttributes.FALL_RESISTANCE.get()).setBaseValue(5.0);
-        attributes.getInstance(Attributes.MAX_HEALTH).setBaseValue(60);
-        attributes.getInstance(Attributes.FOLLOW_RANGE).setBaseValue(48.0f);
-        attributes.getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(1.5);
-        attributes.getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5f);
-        attributes.getInstance(Attributes.ATTACK_DAMAGE).setBaseValue(10.0f);
-        attributes.getInstance(Attributes.ARMOR).setBaseValue(20);
-        attributes.getInstance(Attributes.ARMOR_TOUGHNESS).setBaseValue(5);
-        attributes.getInstance(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0.6);
+                    getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(1.5D);
+                    getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(1.5D);
+                    getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(30.0);
+                    getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(1.8);
+                    getInstance(ChangedAttributes.FALL_RESISTANCE.get()).setBaseValue(5.0);
+                    getInstance(Attributes.MAX_HEALTH).setBaseValue(60);
+                    getInstance(Attributes.FOLLOW_RANGE).setBaseValue(48.0f);
+                    getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(1.5);
+                    getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5f);
+                    getInstance(Attributes.ATTACK_DAMAGE).setBaseValue(10.0f);
+                    getInstance(Attributes.ARMOR).setBaseValue(20);
+                    getInstance(Attributes.ARMOR_TOUGHNESS).setBaseValue(5);
+                    getInstance(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0.6);
     }
 
     // ===================== Gender =====================

@@ -46,12 +46,11 @@ public abstract class GoodEntityBaseEntity extends ChangedEntity {
      * Override in subclass and call super.createAttributes().
      */
     public static AttributeSupplier.Builder createBaseAttributes() {
-        AttributeSupplier.Builder builder = ChangedEntity.createLatexAttributes();
-        builder.add(Attributes.MAX_HEALTH, 40.0);
-        builder.add(Attributes.MOVEMENT_SPEED, 1.0);
-        builder.add(Attributes.ATTACK_DAMAGE, 4.0);
-        builder.add(Attributes.FOLLOW_RANGE, 32.0);
-        return builder;
+        return ChangedEntity.createLatexAttributes()
+                .add(Attributes.MAX_HEALTH, 40.0)
+                .add(Attributes.MOVEMENT_SPEED, 1.0)
+                .add(Attributes.ATTACK_DAMAGE, 4.0)
+                .add(Attributes.FOLLOW_RANGE, 32.0);
     }
 
     /**
