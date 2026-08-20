@@ -87,19 +87,19 @@ public class LuoYuWolfEntity extends ChangedEntity {
         super.setAttributes(attributes);
 
         attributes.getInstance(ChangedAttributes.TRANSFUR_DAMAGE.get()).setBaseValue(7);
-                    .getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(1.5D);
-                    .getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(1.5D);
-                    .getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(30.0);
-                    .getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(1.8);
-                    .getInstance(ChangedAttributes.FALL_RESISTANCE.get()).setBaseValue(5.0);
-                    .getInstance(Attributes.MAX_HEALTH).setBaseValue(60);
-                    .getInstance(Attributes.FOLLOW_RANGE).setBaseValue(48.0f);
-                    .getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(1.5);
-                    .getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5f);
-                    .getInstance(Attributes.ATTACK_DAMAGE).setBaseValue(10.0f);
-                    .getInstance(Attributes.ARMOR).setBaseValue(20);
-                    .getInstance(Attributes.ARMOR_TOUGHNESS).setBaseValue(5);
-                    .getInstance(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0.6);
+        attributes.getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(1.5D);
+        attributes.getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(1.5D);
+        attributes.getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(30.0);
+        attributes.getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(1.8);
+        attributes.getInstance(ChangedAttributes.FALL_RESISTANCE.get()).setBaseValue(5.0);
+        attributes.getInstance(Attributes.MAX_HEALTH).setBaseValue(60);
+        attributes.getInstance(Attributes.FOLLOW_RANGE).setBaseValue(48.0f);
+        attributes.getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(1.5);
+        attributes.getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5f);
+        attributes.getInstance(Attributes.ATTACK_DAMAGE).setBaseValue(10.0f);
+        attributes.getInstance(Attributes.ARMOR).setBaseValue(20);
+        attributes.getInstance(Attributes.ARMOR_TOUGHNESS).setBaseValue(5);
+        attributes.getInstance(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0.6);
     }
 
     // ===================== Gender =====================
