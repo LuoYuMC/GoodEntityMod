@@ -1,0 +1,22 @@
+{
+  "type": "changed:infuser",
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "changed:latex_base"
+    },
+    {
+      "item": "changed:white_latex_goo"
+    },
+    {
+      "item": "minecraft:raw_beef"
+    }
+  ],
+  "gendered": false,
+  "form": "goodentity:form_luoyu_wolf"
+}

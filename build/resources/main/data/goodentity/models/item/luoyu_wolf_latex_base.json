@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "goodentity:item/luoyu_wolf_latex_base"
+  }
+}
