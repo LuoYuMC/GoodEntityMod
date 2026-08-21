@@ -2,19 +2,25 @@
   "type": "changed:infuser",
   "ingredients": [
     {
-      "item": "minecraft:rotten_flesh"
-    },
-    {
-      "item": "minecraft:bone"
-    },
-    {
       "item": "changed:latex_base"
     },
     {
       "item": "changed:white_latex_goo"
     },
     {
-      "item": "minecraft:raw_beef"
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
     }
   ],
   "gendered": false,
