@@ -31,6 +31,9 @@ public class PlayerTicksHandler {
     
 
     private static void onPlayerFlying(Player player) {
+        if (player.isSpectator()) {
+            return;
+        }
         TransfurVariantInstance<?> variant = ProcessTransfur.getPlayerTransfurVariant(player);
         if (variant == null) {
             return;
