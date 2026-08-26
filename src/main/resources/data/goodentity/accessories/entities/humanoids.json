@@ -1,0 +1,14 @@
+{
+  "entities": [
+    "goodentity:luoyu_wolf"
+  ],
+  "slots": [
+    "changed:body",
+    "changed:hands",
+    "changed:head",
+    "changed:face",
+    "changed:full_body",
+    "changed:legs",
+    "changed:neck"
+  ]
+}

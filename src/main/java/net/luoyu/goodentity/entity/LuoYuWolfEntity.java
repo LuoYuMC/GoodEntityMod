@@ -89,7 +89,7 @@ public class LuoYuWolfEntity extends ChangedEntity {
         attributes.getInstance(ChangedAttributes.TRANSFUR_DAMAGE.get()).setBaseValue(7);
         attributes.getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(1.5D);
         attributes.getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(1.5D);
-        attributes.getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(30.0);
+        attributes.getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(15.0);
         attributes.getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(1.8);
         attributes.getInstance(ChangedAttributes.FALL_RESISTANCE.get()).setBaseValue(5.0);
         attributes.getInstance(Attributes.MAX_HEALTH).setBaseValue(60);
@@ -188,12 +188,6 @@ public class LuoYuWolfEntity extends ChangedEntity {
         return false;
     }
 
-    // ===================== Emissive Glow =====================
-
-    /**
-     * Returns true when the emissive glow texture should be rendered.
-     * Override this method to control glow behavior based on entity state.
-     */
     public boolean shouldShowGlow() {
         return true;
     }
