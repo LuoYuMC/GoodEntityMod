@@ -1,6 +1,7 @@
 package net.luoyu.goodentity;
 
 import net.luoyu.goodentity.entity.LuoYuWolfEntity;
+import net.luoyu.goodentity.entity.HanChenHuskyEntity;
 import net.luoyu.goodentity.init.GoodEntityEntities;
 import net.luoyu.goodentity.init.GoodEntityItems;
 import net.luoyu.goodentity.init.GoodEntityTransfurVariants;
@@ -43,5 +44,9 @@ public class GoodEntityMod {
         // Register LuoYu Wolf attributes
         event.put(GoodEntityEntities.LUOYU_WOLF.get(),
                 LuoYuWolfEntity.createAttributes().build());
+                
+        // Register HanChen Husky attributes
+        event.put(GoodEntityEntities.HANCHEN_HUSKY.get(),
+                HanChenHuskyEntity.createAttributes().build());
     }
 }

@@ -1,6 +1,7 @@
 {
   "entities": [
-    "goodentity:luoyu_wolf"
+    "goodentity:luoyu_wolf",
+    "goodentity:hanchen_husky"
   ],
   "slots": [
     "changed:body",

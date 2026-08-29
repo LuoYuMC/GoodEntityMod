@@ -3,6 +3,8 @@ package net.luoyu.goodentity.client;
 import net.luoyu.goodentity.GoodEntity;
 import net.luoyu.goodentity.client.model.LuoYuWolfModel;
 import net.luoyu.goodentity.client.renderer.LuoYuWolfRenderer;
+import net.luoyu.goodentity.client.model.HanChenHuskyModel;
+import net.luoyu.goodentity.client.renderer.HanChenHuskyRenderer;
 import net.luoyu.goodentity.init.GoodEntityEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -41,6 +43,11 @@ public class GoodEntityClientEvents {
                 LuoYuWolfModel.LAYER_LOCATION,
                 LuoYuWolfModel::createBodyLayer
         );
+        // Register the HanChen Husky model layer
+        event.registerLayerDefinition(
+                HanChenHuskyModel.LAYER_LOCATION,
+                HanChenHuskyModel::createBodyLayer
+        );
     }
 
     /**
@@ -53,6 +60,12 @@ public class GoodEntityClientEvents {
         event.registerEntityRenderer(
                 GoodEntityEntities.LUOYU_WOLF.get(),
                 LuoYuWolfRenderer::new
+        );
+
+        // Register the HanChen Husky renderer
+        event.registerEntityRenderer(
+                GoodEntityEntities.HANCHEN_HUSKY.get(),
+                HanChenHuskyRenderer::new
         );
 
         // Register spawn egg renderer (if using ForgeSpawnEggItem, it handles itself)
