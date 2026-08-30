@@ -69,13 +69,13 @@ public class HanChenHuskyEntity extends ChangedEntity {
 
     public static AttributeSupplier.Builder createAttributes() {
         return ChangedEntity.createLatexAttributes()
-            .add(ChangedAttributes.SPRINT_SPEED.get(), 2.0D)
-            .add(ChangedAttributes.SNEAK_SPEED.get(), 2.0D)
+            .add(ChangedAttributes.SPRINT_SPEED.get(), 1.5D)
+            .add(ChangedAttributes.SNEAK_SPEED.get(), 1.5D)
             .add(ChangedAttributes.AIR_CAPACITY.get(), 15.0)
-            .add(ChangedAttributes.JUMP_STRENGTH.get(), 2.0D)
+            .add(ChangedAttributes.JUMP_STRENGTH.get(), 1.5D)
             .add(ChangedAttributes.FALL_RESISTANCE.get(), 5.0D)
             .add(ChangedAttributes.TRANSFUR_DAMAGE.get(), 7)
-            .add(Attributes.MOVEMENT_SPEED, 2.0)
+            .add(Attributes.MOVEMENT_SPEED, 1.5)
             .add(Attributes.MAX_HEALTH, 40)
             .add(Attributes.ARMOR, 20)
             .add(Attributes.ATTACK_DAMAGE, 5)
@@ -88,15 +88,15 @@ public class HanChenHuskyEntity extends ChangedEntity {
         super.setAttributes(attributes);
 
         attributes.getInstance(ChangedAttributes.TRANSFUR_DAMAGE.get()).setBaseValue(7);
-        attributes.getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(2.0D);
-        attributes.getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(2.0D);
+        attributes.getInstance(ChangedAttributes.SPRINT_SPEED.get()).setBaseValue(1.5D);
+        attributes.getInstance(ChangedAttributes.SNEAK_SPEED.get()).setBaseValue(1.5D);
         attributes.getInstance(ChangedAttributes.AIR_CAPACITY.get()).setBaseValue(15.0);
-        attributes.getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(2.0);
+        attributes.getInstance(ChangedAttributes.JUMP_STRENGTH.get()).setBaseValue(1.5);
         attributes.getInstance(ChangedAttributes.FALL_RESISTANCE.get()).setBaseValue(5.0);
         attributes.getInstance(Attributes.MAX_HEALTH).setBaseValue(40);
         attributes.getInstance(Attributes.FOLLOW_RANGE).setBaseValue(48.0f);
-        attributes.getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(2.0);
-        attributes.getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(2.0f);
+        attributes.getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(1.5);
+        attributes.getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5f);
         attributes.getInstance(Attributes.ATTACK_DAMAGE).setBaseValue(5.0f);
         attributes.getInstance(Attributes.ARMOR).setBaseValue(20);
         attributes.getInstance(Attributes.ARMOR_TOUGHNESS).setBaseValue(5);

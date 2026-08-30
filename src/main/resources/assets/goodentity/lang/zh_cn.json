@@ -2,5 +2,7 @@
   "language": "zh_cn",
   "mod": "优质实体",
   "entity.goodentity.luoyu_wolf": "洛宇",
-  "item.goodentity.luoyu_wolf_spawn_egg": "洛宇刷怪蛋"
+  "item.goodentity.luoyu_wolf_spawn_egg": "洛宇刷怪蛋",
+  "entity.goodentity.hanchen_husky": "寒辰",
+  "item.goodentity.hanchen_husky_spawn_egg": "寒辰刷怪蛋"
 }
