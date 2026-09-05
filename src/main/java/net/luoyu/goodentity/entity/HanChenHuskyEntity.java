@@ -77,7 +77,7 @@ public class HanChenHuskyEntity extends ChangedEntity {
             .add(ChangedAttributes.TRANSFUR_DAMAGE.get(), 7)
             .add(Attributes.MOVEMENT_SPEED, 1.5)
             .add(Attributes.MAX_HEALTH, 40)
-            .add(Attributes.ARMOR, 20)
+            .add(Attributes.ARMOR, 0)
             .add(Attributes.ATTACK_DAMAGE, 5)
             .add(Attributes.FOLLOW_RANGE, 48)
             .add(Attributes.KNOCKBACK_RESISTANCE, 0.6);
@@ -98,7 +98,7 @@ public class HanChenHuskyEntity extends ChangedEntity {
         attributes.getInstance(Attributes.MOVEMENT_SPEED).setBaseValue(1.5);
         attributes.getInstance(ForgeMod.SWIM_SPEED.get()).setBaseValue(1.5f);
         attributes.getInstance(Attributes.ATTACK_DAMAGE).setBaseValue(5.0f);
-        attributes.getInstance(Attributes.ARMOR).setBaseValue(20);
+        attributes.getInstance(Attributes.ARMOR).setBaseValue(0);
         attributes.getInstance(Attributes.ARMOR_TOUGHNESS).setBaseValue(5);
         attributes.getInstance(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0.6);
     }
