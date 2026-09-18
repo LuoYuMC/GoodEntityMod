@@ -21,7 +21,7 @@ import java.util.List;
 
 
 public class HanChenHuskyModel extends AdvancedHumanoidModel<HanChenHuskyEntity> {
-    public static final ModelLayerLocation LAYER_LOCATION = GoodEntity.layerLocation("luoyu_wolf", "main");
+    public static final ModelLayerLocation LAYER_LOCATION = GoodEntity.layerLocation("", "main");
     private final ModelPart RightLeg;
     private final ModelPart LeftLeg;
     private final ModelPart RightArm;
