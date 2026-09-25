@@ -55,9 +55,61 @@ import static net.ltxprogrammer.changed.entity.HairStyle.BALD;
 
 public class LuoYuWolfEntity extends ChangedEntity {
 
+    private static final EntityDataAccessor<Boolean> GLOW_ON =
+        SynchedEntityData.defineId(LuoYuWolfEntity.class, EntityDataSerializers.BOOLEAN);
+
     public LuoYuWolfEntity(EntityType<? extends ChangedEntity> type, Level level) {
         super(type, level);
     }
+
+    @Override
+    protected void defineSynchedData() {
+        super.defineSynchedData();
+        this.entityData.define(GLOW_ON, true);
+    }
+
+    // ===================== Glow State =====================
+
+    public boolean isGlowOn() {
+        return this.entityData.get(GLOW_ON);
+    }
+
+    public void setGlowOn(boolean on) {
+        this.entityData.set(GLOW_ON, on);
+    }
+
+    public boolean shouldShowGlow() {
+        return isGlowOn();
+    }
+
+    @Override
+    public void readAdditionalSaveData(CompoundTag tag) {
+        super.readAdditionalSaveData(tag);
+        if (tag.contains("GlowOn"))
+            setGlowOn(tag.getBoolean("GlowOn"));
+    }
+
+    @Override
+    public void addAdditionalSaveData(CompoundTag tag) {
+        super.addAdditionalSaveData(tag);
+        tag.putBoolean("GlowOn", isGlowOn());
+    }
+
+    @Override
+    public CompoundTag savePlayerVariantData() {
+        CompoundTag tag = super.savePlayerVariantData();
+        tag.putBoolean("GlowOn", isGlowOn());
+        return tag;
+    }
+
+    @Override
+    public void readPlayerVariantData(CompoundTag tag) {
+        super.readPlayerVariantData(tag);
+        if (tag.contains("GlowOn"))
+            setGlowOn(tag.getBoolean("GlowOn"));
+    }
+
+    // ===================== Transfur Mode =====================
 
     @Override
     public TransfurMode getTransfurMode() {
@@ -188,7 +240,4 @@ public class LuoYuWolfEntity extends ChangedEntity {
         return false;
     }
 
-    public boolean shouldShowGlow() {
-        return true;
-    }
 }

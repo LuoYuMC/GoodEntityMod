@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "goodentity:abilities/toggle_glowing_state"
+  }
+}

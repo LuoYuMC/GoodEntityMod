@@ -1,5 +1,6 @@
 package net.luoyu.goodentity;
 
+import net.luoyu.goodentity.ability.GoodEntityAbilities;
 import net.luoyu.goodentity.init.GoodEntityEntities;
 import net.luoyu.goodentity.init.GoodEntityItems;
 import net.luoyu.goodentity.init.GoodEntityTransfurVariants;
@@ -24,6 +25,7 @@ public class GoodEntity {
         GoodEntityEntities.REGISTRY.register(modEventBus);
         GoodEntityItems.REGISTRY.register(modEventBus);
         GoodEntityTransfurVariants.REGISTRY.register(modEventBus);
+        GoodEntityAbilities.REGISTRY.register(modEventBus);
 
         LOGGER.info("Good Entity ({} v{}) loaded successfully!", MODID, GoodEntity.class.getPackage().getImplementationVersion());
     }

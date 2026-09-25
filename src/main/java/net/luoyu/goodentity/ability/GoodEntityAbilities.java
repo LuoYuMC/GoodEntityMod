@@ -4,7 +4,10 @@ import net.ltxprogrammer.changed.ability.AbstractAbility;
 import net.ltxprogrammer.changed.ability.IAbstractChangedEntity;
 import net.ltxprogrammer.changed.ability.SimpleAbility;
 import net.ltxprogrammer.changed.ability.SimpleAbilityInstance;
+import net.ltxprogrammer.changed.init.ChangedRegistry;
 import net.minecraft.world.entity.player.Player;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 /**
  * Ability registry for Good Entity.
@@ -12,22 +15,35 @@ import net.minecraft.world.entity.player.Player;
  *
  * To create a new ability:
  * 1. Create a class extending SimpleAbility (for simple abilities)
- *    or AbstractAbility<YourInstance> ( for complex abilities)
+ *    or AbstractAbility<YourInstance> (for complex abilities)
  * 2. Register it here
  * 3. Add it to a TransfurVariant's abilities list
  */
 public class GoodEntityAbilities {
 
-    // Example ability registration (replace with your actual abilities)
-    // public static final RegistryObject<SimpleAbility> EXAMPLE_ABILITY =
-    //         GoodEntityRegistries.ABILITIES.register("example_ability", ExampleAbility::new);
+    /**
+     * Deferred register for Good Entity abilities, using Changed's ABILITY registry.
+     */
+    public static final DeferredRegister<AbstractAbility<?>> REGISTRY =
+        ChangedRegistry.ABILITY.createDeferred("goodentity");
+
+    // ============================================================
+    // Abilities
+    // ============================================================
 
     /**
-     * Register all abilities.
-     * Call this from GoodEntity.java or your initialization class.
+     * Toggle the glowing state of the entity (emissive layer on/off).
+     * Registered under the ID "goodentity:toggle_glowing_state".
+     */
+    public static final RegistryObject<ToggleGlowingState> TOGGLE_GLOWING_STATE =
+        REGISTRY.register("toggle_glowing_state", ToggleGlowingState::new);
+
+    /**
+     * Register all abilities on the mod event bus.
+     * Call from {@code GoodEntity} constructor.
      */
     public static void register(net.minecraftforge.eventbus.api.IEventBus bus) {
-        // GoodEntityRegistries.ABILITIES.register(bus);
+        REGISTRY.register(bus);
     }
 
     /**

@@ -4,5 +4,8 @@
   "entity.goodentity.luoyu_wolf": "Yu Luo Wolf",
   "item.goodentity.luoyu_wolf_spawn_egg": "Yu Luo Wolf Spawn Egg",
   "entity.goodentity.hanchen_husky": "Chen Han Husky",
-  "item.goodentity.hanchen_husky_spawn_egg": "Chen Han Husky Spawn Egg"
+  "item.goodentity.hanchen_husky_spawn_egg": "Chen Han Husky Spawn Egg",
+  "ability.goodentity.toggle_glowing_state": "Toggle Glowing State",
+  "ability.goodentity.toggle_glowing_state.have_interaction": "This variant can toggle its glow",
+  "ability.goodentity.toggle_glowing_state.have_interaction.glow_layer.action": "Glow state set to %s"
 }

@@ -1,5 +1,6 @@
 package net.luoyu.goodentity.init;
 
+import net.luoyu.goodentity.ability.GoodEntityAbilities;
 import net.luoyu.goodentity.GoodEntity;
 import net.luoyu.goodentity.entity.LuoYuWolfEntity;
 import net.luoyu.goodentity.entity.HanChenHuskyEntity;
@@ -43,7 +44,8 @@ public class GoodEntityTransfurVariants {
                                 Creeper.class
                         ))
                         .nightVision()
-                        .addAbility(ChangedAbilities.TOGGLE_NIGHT_VISION));
+                        .addAbility(ChangedAbilities.TOGGLE_NIGHT_VISION)
+                        .addAbility(() -> GoodEntityAbilities.TOGGLE_GLOWING_STATE.get()));
 
         public static final RegistryObject<TransfurVariant<HanChenHuskyEntity>> HANCHEN_HUSKY =
             register("form_hanchen_husky",
